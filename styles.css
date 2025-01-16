@@ -286,3 +286,59 @@ span.right span.small {
     text-decoration: none;
     cursor: pointer;
 }
+
+footer {
+    width: 100%;
+    height: auto;
+    padding: 20px calc((100% - 1200px) / 2);
+    background-color: lightgray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .info {
+    display: flex;
+}
+
+#hours, #location, #contact {
+    margin-left: 25px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--secundary-font-color);
+}
+
+#contact {
+    width: 150px;
+    align-items: flex-end;
+}
+
+#contact h3 {
+    margin: 0 auto;
+}
+
+#hours hr, #location hr, #contact hr {
+    width: 100%;
+    height: 2px;
+    border: none;
+    background-color: var(--secundary-font-color);
+    margin: 5px 0;
+}
+
+#contact .telephone::before {
+    top: 33px;
+    left: 5px;
+    filter:invert(85%) sepia(98%) saturate(4242%) hue-rotate(237deg) brightness(61%) contrast(129%);
+}
+
+footer a.telephone:link, 
+footer a.telephone:visited, 
+footer a.telephone:hover, 
+footer a.telephone:active {
+    color: var(--secundary-font-color);
+    text-decoration: none;
+    cursor: pointer;
+}
