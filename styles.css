@@ -237,3 +237,52 @@ span.right span.small {
 #true-blue p {
     font-size: 2rem;
 }
+
+#pitch {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 90px 0 20px;
+}
+
+
+
+#pitch h2, #pitch p {
+    width: 50%;
+    color: var(--secundary-font-color);
+}
+
+#pitch h2 {
+    text-align: right;
+    font-size: 4rem;
+}
+
+#pitch hr {
+    width: 3px;
+    height: 200px;
+    border: none;
+    background-color: var(--secundary-font-color);
+    margin: 0 50px;
+}
+
+#pitch p {
+    font-size: 2.5rem;
+}
+
+#contact-link {
+    padding: 10px 20px;
+    border: 2px solid var(--secundary-font-color);
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+
+#contact-link:link, 
+#contact-link:visited, 
+#contact-link:hover, 
+#contact-link:active {
+    color: var(--secundary-font-color);
+    text-decoration: none;
+    cursor: pointer;
+}
