@@ -168,3 +168,42 @@ span.right span.small {
     font-weight: bolder;
 }
 
+/* styling process section */
+
+#process {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+}
+
+#process h2 {
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
+}
+
+#process hr {
+    width: 100%;
+    height: 3px;
+    background-color: var(--secundary-font-color);
+    border: none;
+    margin: 20px 0;
+}
+
+#process h3 {
+    width: calc((100% - 180px) / 4);
+    height: 100px;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 32px;
+    text-align: center;
+    color: var(--secundary-font-color);
+    font-size: 1.5rem;
+}
+
