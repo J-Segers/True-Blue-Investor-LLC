@@ -26,7 +26,7 @@ body {
 header {
     width: 100%;
     height: 450px;
-    background-image: url(./assets/Header\ House.png), url(./assets/Header\ Backdrop.png);
+    background-image: url(../assets/Header\ House.png), url(../assets/Header\ Backdrop.png);
     background-size: calc(608px * 0.75) calc(494px * 0.75), cover;
     background-repeat: no-repeat;
     background-position: right bottom, left bottom;
@@ -79,7 +79,7 @@ footer a:active {
 
 span.left::before {
     position: absolute;
-    background-image: url(./assets/House\ Logo.png);
+    background-image: url(../assets/House\ Logo.png);
     background-repeat: no-repeat;
     content: "";
     width: 100px;
@@ -126,7 +126,7 @@ span.right span.small {
     position: absolute;
     top: 4px;
     left: -20px;
-    background-image: url(./assets/Phone\ Logo.png);
+    background-image: url(../assets/Phone\ Logo.png);
     background-size: contain;
     background-repeat: no-repeat;
     content: "";
@@ -216,7 +216,7 @@ span.right span.small {
     justify-content: center;
     align-items: flex-end;
     color: white;
-    background-image: url("./assets/Section\ 2\ House.png"), var(--left-right-gradient);
+    background-image: url("../assets/Section\ 2\ House.png"), var(--left-right-gradient);
     background-repeat: no-repeat;
     background-size: calc(958px * .75) calc(543px * .75), 100%;
     background-position: left bottom, left;
