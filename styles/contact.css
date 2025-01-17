@@ -167,6 +167,7 @@ span.right span.small {
 }
 
 .message h2 {
+    width: 100%;
     font-size: 3rem;
     margin-bottom: 25px;
 }
