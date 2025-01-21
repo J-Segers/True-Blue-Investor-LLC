@@ -25,12 +25,13 @@ body {
 
 header {
     width: 100%;
-    background-image: url(../assets/Header\ Backdrop.png);
+    background-image: var(--right-left-gradient);
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 .top-bar {
@@ -38,6 +39,7 @@ header {
     max-width: 1200px;
     height: 135px;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
@@ -63,6 +65,7 @@ footer a:active {
 .logo {
     width: 275px;
     height: 100px;
+    margin: 0;
 }
 
 .logo h1 {
@@ -96,13 +99,6 @@ span.right span.small {
     font-size: x-small;
 }
 
-#gradient-line {
-    width: 100%;
-    height: 3px;
-    background-image:  
-        linear-gradient(to right, white, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
-    border: 0;
-}
 .blue {
     color: var(--secundary-font-color);
 }
@@ -112,7 +108,7 @@ span.right span.small {
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
-    margin-top: 10px;
+    margin: 10px 0 0 0;
     position: relative;
 }
 
@@ -174,7 +170,10 @@ span.right span.small {
 
 .info {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 #hours, #location, #contact {
@@ -187,6 +186,7 @@ span.right span.small {
     color: var(--secundary-font-color);
     font-size: 1.5rem;
     text-align: center;
+    margin: 0;
 }
 
 #hours hr, #location hr, #contact hr {
@@ -225,4 +225,60 @@ span.right span.small {
     top: 50px;
     left: 0;
     filter:invert(85%) sepia(98%) saturate(4242%) hue-rotate(237deg) brightness(61%) contrast(129%);
+}
+
+@media screen and (max-width: 768px) {
+    .top-bar {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .logo {
+        width: 275px;
+        height: 100px;
+        margin: 25px 0;
+    }
+    
+    .top-bar .contact {
+        margin: 0 0 25px 0;
+    }
+
+    #contact-section {
+        padding: 0;
+    }
+
+    .message, .info {
+        width: 90%;
+    }
+    
+    .message {
+        text-align: center;
+    }
+    
+    .info {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #hours, #location, #contact {
+        width: auto;
+        justify-content: center;
+        margin-bottom: 25px;
+    }
+    
+    #hours hr, #location hr, #contact hr {
+        width: 100%;
+    }
+    
+    #contact {
+        width: auto;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    
+    #contact .telephone::before {
+        left: calc(100% / 2 - 176px / 2 - 20px);
+    }
 }
