@@ -202,6 +202,7 @@ span.right span.small {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 100px;
 }
 
 #contact hr {
@@ -216,14 +217,24 @@ span.right span.small {
 #contact a:visited, 
 #contact a:hover, 
 #contact a:active {
-    color: var(--secundary-font-color);
+    color: var(--primary-font-color);
     text-decoration: none;
-    cursor: pointer;
+    cursor: pointer;width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom right, #04004f, #090979 19%, #8cecff 100%);
+    border: 2px solid var(--secundary-font-color);
+    border-radius: 25px;
+    margin-top: 25px;
+}
+
+#contact a:hover {
+    background-image: linear-gradient(to top left, #04004f, #090979 19%, #8cecff 100%);
 }
 
 #contact .telephone::before {
-    top: 50px;
-    left: 0;
     filter:invert(85%) sepia(98%) saturate(4242%) hue-rotate(237deg) brightness(61%) contrast(129%);
 }
 
